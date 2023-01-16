@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+body {
+  margin: 0;
+  background-color: rgb(251, 249, 249);
+}
+
+.affiliates-content-wrapper {
+  width: 96% !important;
+  max-width: 1200px !important;
+  display: block;
+  margin: auto !important;
+  padding: 100px 0 100px 0;
+}
+
+#affiliates-intro-section {
+  padding-bottom: 40px;
+}
+#affiliates-intro-section h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #20303c;
+  margin: 5px 0 0px 0;
+  text-align: center;
+}
+#affiliates-intro-section p {
+  color: #424242;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 160%;
+  margin: 20px auto 20px auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+#affiliates-tabs-section .affiliates-tab-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+#affiliates-tabs-section .affiliates-tab-btns .tab-btn {
+  position: relative;
+  margin: 10px;
+}
+#affiliates-tabs-section .affiliates-tab-btns .tab-btn input {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: -1;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  visibility: hidden;
+  opacity: 0;
+}
+#affiliates-tabs-section .affiliates-tab-btns .tab-btn input:checked + label {
+  color: #f2efef !important;
+  background-color: #20303c;
+  border-color: #20303c;
+}
+#affiliates-tabs-section .affiliates-tab-btns .tab-btn label {
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  background-color: #f2efef;
+  border: 1px solid #f2efef;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #20303c;
+  font-weight: 600;
+}
+#affiliates-tabs-section .affiliates-tab-btns .tab-btn:hover label {
+  transition: all 0.7s ease;
+  cursor: pointer;
+  border-color: #20303c;
+}
+
+#affiliate-boxes-and-modals .affiliate-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 30px;
+}
+#affiliate-boxes-and-modals .affiliate-boxes .affiliate-box {
+  cursor: pointer;
+  transition: border 0.3s linear;
+  background-color: #20303c;
+  border-radius: 9px;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: -webkit-max-content -webkit-max-content 1fr -webkit-max-content;
+  grid-template-rows: max-content max-content 1fr max-content;
+  align-items: start;
+  justify-items: start;
+}
+#affiliate-boxes-and-modals .affiliate-boxes .affiliate-box--hidden {
+  display: none;
+}
+#affiliate-boxes-and-modals .affiliate-boxes .affiliate-box__logo {
+  background-color: white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#affiliate-boxes-and-modals .affiliate-boxes .affiliate-box__logo img {
+  max-width: 43px;
+  max-height: 43px;
+}
+#affiliate-boxes-and-modals .affiliate-boxes .affiliate-box__name {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 1px;
+  margin: 20px 0 20px 0;
+}
+#affiliate-boxes-and-modals .affiliate-boxes .affiliate-box__description {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 0.9375rem;
+  line-height: 135%;
+  color: #dbdedf;
+  /* limit text to 3 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 0 30px 0;
+}
+#affiliate-boxes-and-modals .affiliate-boxes .affiliate-box__discount {
+  background-color: hsla(30deg, 86%, 53%, 0.2);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+  padding: 6px 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+#affiliate-boxes-and-modals .affiliate-boxes .affiliate-box__discount i {
+  color: #ee851f;
+  font-size: 0.75rem;
+  margin-right: 10px;
+}
+#affiliate-boxes-and-modals .affiliate-boxes .affiliate-box__discount p {
+  color: #ee851f;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 100%;
+  margin: 0 0 0 0;
+  /* limit text to 3 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#affiliate-boxes-and-modals .affiliate-modal {
+  z-index: 20000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  background-color: rgba(26, 27, 28, 0.95);
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+}
+#affiliate-boxes-and-modals .affiliate-modal--open {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+#affiliate-boxes-and-modals .affiliate-modal--hidden {
+  display: none;
+}
+#affiliate-boxes-and-modals .affiliate-modal .modal-content {
+  width: 100%;
+  max-width: 550px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 70px 20px 50px 20px;
+  position: relative;
+  transform: translateY(-150%);
+  transition: all 0.8s ease-in-out;
+  opacity: 1;
+}
+#affiliate-boxes-and-modals .affiliate-modal .close {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#affiliate-boxes-and-modals .affiliate-modal .close i {
+  color: #ee851f;
+  font-size: 1.25rem;
+}
+#affiliate-boxes-and-modals .affiliate-modal .header {
+  background-color: #20303c;
+  border-radius: 12px 12px 0 0;
+  padding: 15px;
+}
+#affiliate-boxes-and-modals .affiliate-modal .header__logo {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#affiliate-boxes-and-modals .affiliate-modal .header__logo img {
+  max-width: 47px;
+  max-height: 47px;
+}
+#affiliate-boxes-and-modals .affiliate-modal .header__name {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 1px;
+  margin: 20px 0 0px 0;
+  text-align: center;
+}
+#affiliate-boxes-and-modals .affiliate-modal .text {
+  padding: 30px 20px;
+  background-color: white;
+}
+#affiliate-boxes-and-modals .affiliate-modal .text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 135%;
+  color: #424242;
+}
+#affiliate-boxes-and-modals .affiliate-modal .divider {
+  display: grid;
+  grid-template-columns: 10px 1fr 10px;
+  grid-template-rows: 12px 18px;
+  position: relative;
+  max-height: 30px;
+  overflow: hidden;
+}
+#affiliate-boxes-and-modals .affiliate-modal .divider div {
+  grid-column: 2/span 1;
+  height: 100%;
+  background-color: white;
+}
+#affiliate-boxes-and-modals .affiliate-modal .divider div:nth-child(1) {
+  grid-row: 1/span 1;
+}
+#affiliate-boxes-and-modals .affiliate-modal .divider div:nth-child(2) {
+  grid-row: 2/span 1;
+  border-top: 3px dashed #f2efef;
+}
+#affiliate-boxes-and-modals .affiliate-modal .divider::after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 10px solid white;
+  position: relative;
+  left: -10px;
+  top: -10px;
+}
+#affiliate-boxes-and-modals .affiliate-modal .divider::before {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 10px solid white;
+  position: relative;
+  right: 30px;
+  top: -10px;
+}
+#affiliate-boxes-and-modals .affiliate-modal .offers {
+  padding: 20px 20px 35px 20px;
+  margin: 0;
+  background-color: white;
+  border-radius: 0 0 12px 12px;
+  border-top: none !important;
+  position: relative;
+  top: -1px;
+}
+#affiliate-boxes-and-modals .affiliate-modal .offer {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 6px;
+  background-color: #f2efef;
+  border: 1px solid #f2efef;
+  transition: border 0.5s ease;
+}
+#affiliate-boxes-and-modals .affiliate-modal .offer__name {
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #ee851f;
+}
+#affiliate-boxes-and-modals .affiliate-modal .offer__terms {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 0.75rem;
+  color: #a2a4a4;
+  display: block;
+  margin-top: 8px;
+}
+#affiliate-boxes-and-modals .affiliate-modal .offer:not(:first-child) {
+  margin-top: 20px;
+}
+#affiliate-boxes-and-modals .affiliate-modal .offer:hover {
+  border-color: #ee851f;
+}
+
+@media (max-width: 1000px) {
+  #affiliate-boxes-and-modals .affiliate-boxes {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+@media (max-width: 700px) {
+  #affiliate-boxes-and-modals .affiliate-boxes {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .content-wrapper {
+    padding: 50px 0 50px 0;
+  }
+  #affiliates-intro-section h1 {
+    font-size: 1.25rem;
+  }
+  #affiliates-intro-section p {
+    font-size: 0.875rem;
+    margin: 10px auto 20px auto;
+  }
+  #affiliates-tabs-section .affiliates-tab-btns {
+    margin-bottom: 20px;
+  }
+  #affiliates-tabs-section .affiliates-tab-btns .tab-btn {
+    margin: 5px;
+  }
+  #affiliates-tabs-section .affiliates-tab-btns .tab-btn label {
+    border-radius: 2px;
+    padding: 10px 10px;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+  }
+  #affiliate-boxes-and-modals .affiliate-boxes {
+    row-gap: 10px;
+  }
+  #affiliate-boxes-and-modals .affiliate-boxes .affiliate-box {
+    border-radius: 6px;
+    padding: 10px;
+  }
+  #affiliate-boxes-and-modals .affiliate-boxes .affiliate-box__logo {
+    width: 45px;
+    height: 45px;
+  }
+  #affiliate-boxes-and-modals .affiliate-boxes .affiliate-box__logo img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+  #affiliate-boxes-and-modals .affiliate-boxes .affiliate-box__name {
+    font-size: 1.125rem;
+    margin: 10px 0 10px 0;
+  }
+  #affiliate-boxes-and-modals .affiliate-boxes .affiliate-box__description {
+    font-size: 0.875rem;
+    margin: 0 0 20px 0;
+  }
+  #affiliate-boxes-and-modals .affiliate-boxes .affiliate-box__discount {
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  #affiliate-boxes-and-modals .affiliate-boxes .affiliate-box__discount i {
+    font-size: 0.625rem;
+  }
+  #affiliate-boxes-and-modals .affiliate-boxes .affiliate-box__discount p {
+    font-size: 0.75rem;
+  }
+  #affiliate-boxes-and-modals .affiliate-modal-container .affiliate-modal {
+    padding: 30px 20px 30px 20px;
+  }
+  #affiliate-boxes-and-modals .affiliate-modal-container .close {
+    top: 10px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+  }
+  #affiliate-boxes-and-modals .affiliate-modal-container .close i {
+    font-size: 1rem;
+  }
+  #affiliate-boxes-and-modals .affiliate-modal-container .header {
+    border-radius: 6px 6px 0 0;
+    padding: 15px 10px;
+  }
+  #affiliate-boxes-and-modals .affiliate-modal-container .header__logo {
+    width: 45px;
+    height: 45px;
+  }
+  #affiliate-boxes-and-modals .affiliate-modal-container .header__logo img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+  #affiliate-boxes-and-modals .affiliate-modal-container .header__name {
+    font-size: 1.25rem;
+    margin: 15px 0 0px 0;
+  }
+  #affiliate-boxes-and-modals .affiliate-modal-container .text {
+    padding: 15px 10px;
+    background-color: white;
+  }
+  #affiliate-boxes-and-modals .affiliate-modal-container .text p {
+    font-size: 0.75rem;
+  }
+  #affiliate-boxes-and-modals .affiliate-modal-container .offers {
+    padding: 15px 10px 15px 10px;
+    border-radius: 0 0 6px 6px;
+  }
+  #affiliate-boxes-and-modals .affiliate-modal-container .offer {
+    padding: 10px 5px;
+    border-radius: 4px;
+  }
+  #affiliate-boxes-and-modals .affiliate-modal-container .offer__name {
+    font-size: 0.875rem;
+  }
+  #affiliate-boxes-and-modals .affiliate-modal-container .offer__terms {
+    font-size: 0.625rem;
+  }
+  #affiliate-boxes-and-modals .affiliate-modal-container .offer:not(:first-child) {
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=affiliates-page.css.map */

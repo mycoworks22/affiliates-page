@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Offers | Registered Office (UK) Ltd</title>
+  <meta name="description" content="Save with discounts and offers from our partners to help your business thrive.">
+
+  <!-- STYLES  -->
+  <link rel="stylesheet" href="assets/css/affiliates-page.css">
+
+  <!-- FONT AWESOME AND GOOGLE MATERIAL ICONS  -->
+  <script src="https://kit.fontawesome.com/be3a5a4e18.js?v=1.0" crossorigin="anonymous"></script>
+
+  <!-- JS  -->
+  <script src="assets/js/affiliates-functionality.js?v=1.0" defer></script>
+
+</head>
+<body>
+
+  <div class="affiliates-content-wrapper">
+    <!-- INTRODUCTION  -->
+    <section id="affiliates-intro-section">
+      <h1>
+        See our latest business offers
+      </h1>
+      <p>
+        At the Registered Office (UK) Ltd, we want to help your business thrive. That’s why we have collaborated with our partners to carefully select several discounts and offers to support you, whatever your business needs.
+      </p>
+      <p>
+        From web hosting and payment solutions to website design and more, explore our range of services to help you improve the functionality of your business.
+      </p>
+      <p>
+        Simply click any of our live offers below for more details.
+      </p>
+    </section>
+    <!-- ------------------------------  -->
+
+    <!-- TAB BTNS  -->
+    <section id="affiliates-tabs-section">
+      <div class="affiliates-tab-btns">
+        <!-- all  -->
+        <div class="tab-btn">
+          <input type="radio" id="affiliates-btn-all" name="affiliates-btn" value="affiliate-box" checked onchange="affiliatesFilterBtns(this)">
+          <label for="affiliates-btn-all">All</label>
+        </div>
+        <!-- web hosting  -->
+        <div class="tab-btn">
+          <input type="radio" id="affiliates-btn-web-host" name="affiliates-btn" value="affiliate-box-web-host" onchange="affiliatesFilterBtns(this)">
+          <label for="affiliates-btn-web-host">Web Hosting</label>
+        </div>
+        <!-- finance  -->
+        <div class="tab-btn">
+          <input type="radio" id="affiliates-btn-finance" name="affiliates-btn" value="affiliate-box-finance" onchange="affiliatesFilterBtns(this)">
+          <label for="affiliates-btn-finance">Finance</label>
+        </div>
+        <!-- marketing  -->
+        <div class="tab-btn">
+          <input type="radio" id="affiliates-btn-marketing" name="affiliates-btn" value="affiliate-box-marketing" onchange="affiliatesFilterBtns(this)">
+          <label for="affiliates-btn-marketing">Marketing</label>
+        </div>
+        <!-- business supplies  -->
+        <div class="tab-btn">
+          <input type="radio" id="affiliates-btn-business-supplies" name="affiliates-btn" value="affiliate-box-business-supplies" onchange="affiliatesFilterBtns(this)">
+          <label for="affiliates-btn-business-supplies">Business Supplies</label>
+        </div>
+        <!-- mobile and broadband  -->
+        <div class="tab-btn">
+          <input type="radio" id="affiliates-btn-mobile-and-broadband" name="affiliates-btn" value="affiliate-box-mobile-and-broadband" onchange="affiliatesFilterBtns(this)">
+          <label for="affiliates-btn-mobile-and-broadband">Mobile & Broadband</label>
+        </div>
+        <!-- business services  -->
+        <div class="tab-btn">
+          <input type="radio" id="affiliates-btn-business-services" name="affiliates-btn" value="affiliate-box-business-services" onchange="affiliatesFilterBtns(this)">
+          <label for="affiliates-btn-business-services">Business Services</label>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------  -->
+
+    <!-- AFFILIATE BOXES AND MODALS  -->
+    <section id="affiliate-boxes-and-modals">
+      <div class="affiliate-boxes">
+
+        <!--
+          Each affiliate box should have class equal to the value of the tab btn representing its category!
+
+          Web hosting - > affiliate-box-web-host
+          Finance - > affiliate-box-finance
+          Marketing - > affiliate-box-marketing
+          Business Supplies - > affiliate-box-business-supplies
+          Mobile & Broadband - > affiliate-box-mobile-and-broadband
+          Business Services - > affiliate-box-business-services
+        -->
+
+        <!-- FIVERR  -->
+          <div class="affiliate-box affiliate-box-business-services" id="affiliate-box-fiverr" onclick="openAffiliateModal('affiliate-modal-fiverr')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/fiverr-logo.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              Fiverr
+            </p>
+            <p class="affiliate-box__description">
+              Fiverr is the world’s largest marketplace for freelance services where digital entrepreneurs and businesses can connect with incredible talent based on their budget, deadline, and project requirements.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Learn more</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-fiverr">
+            <div class="modal-content">
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-fiverr')">
+                <i class="fas fa-times"></i>
+              </div>
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/fiverr-logo.png" alt="">
+                </div>
+                <p class="header__name">
+                  Fiverr
+                </p>
+              </div>
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    Fiverr is the world’s largest marketplace for freelance services where digital entrepreneurs and businesses can connect with incredible talent based on their budget, deadline, and project requirements.
+                  </b> <br> <br>
+                  Fiverr is a global platform that connects freelancers and people or businesses looking to hire. Listings on Fiverr are diverse and range from "get a well-designed business card" to "help with creating your new website". The most sought-after jobs on Fiverr include website design, social media management, proofreading, copywriting, and resume writing. Freelancers work from a variety of workplaces, ranging from home to office. The platform is global, with freelancers and businesses spanning an estimated 160 countries.
+                </p>
+              </div>
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+              <!-- offer  -->
+              <div class="offers">
+                <a href="https://www.awin1.com/cread.php?awinmid=6288&awinaffid=1177994" class="offer" target="_blank">
+                  <span class="offer__name">
+                    Visit website to view deals
+                  </span> <br>
+                  <!-- <span class="offer__terms">
+                    Valid until 03 April 2023
+                  </span> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        <!--  -->
+
+        <!-- IONOS  -->
+          <div class="affiliate-box affiliate-box-web-host" id="affiliate-box-ionos" onclick="openAffiliateModal('affiliate-modal-ionos')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/ionos-logo.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              IONOS
+            </p>
+            <p class="affiliate-box__description">
+              IONOS is a hosting and cloud partner suitable for small and medium-sized businesses. They are experts in IaaS and offer a portfolio of solutions to get businesses present online and working in the digital space.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Learn more</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-ionos">
+            <div class="modal-content">
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-ionos')">
+                <i class="fas fa-times"></i>
+              </div>
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/ionos-logo.png" alt="">
+                </div>
+                <p class="header__name">
+                  IONOS
+                </p>
+              </div>
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    IONOS is a hosting and cloud partner suitable for small and medium-sized businesses. They are experts in IaaS and offer a portfolio of solutions to get businesses present online and working in the digital space.
+                  </b> <br> <br>
+                  IONOS is the largest hosting company in Europe, they manage more than 8 million customers and host more than 12 million domains in their own data centres around the globe. Suitable for entrepreneurs taking their first steps online, business owners scaling up, and established large companies and partners, IONOS helps everyone reach their ambitious goals. Whether building an online presence by securing a domain, building a website, moving back-office processes to the cloud or orchestrating a container cluster, IONOS offers a best-in-class app, server or service.
+                </p>
+              </div>
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+              <!-- offer  -->
+              <div class="offers">
+                <a href="https://acn.ionos.co.uk/aff_c?offer_id=3&aff_id=5160" class="offer" target="_blank">
+                  <span class="offer__name">
+                    Visit website to view deals
+                  </span> <br>
+                  <!-- <span class="offer__terms">
+                    Valid until 03 April 2023
+                  </span> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        <!--  -->
+
+        <!-- NAMES.CO.UK  -->
+          <div class="affiliate-box affiliate-box-web-host" id="affiliate-box-names-co-uk" onclick="openAffiliateModal('affiliate-modal-names-co')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/names-co-uk-logo.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              Names.co.uk
+            </p>
+            <p class="affiliate-box__description">
+              Names.co.uk can help you with domain registration, web hosting and building a website. All with free personalised email and friendly UK support 7 days a week.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Multiple offers available</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-names-co">
+            <div class="modal-content">
+
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-names-co')">
+                <i class="fas fa-times"></i>
+              </div>
+
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/names-co-uk-logo.png" alt="">
+                </div>
+                <p class="header__name">
+                  Names.co.uk
+                </p>
+              </div>
+
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    Names.co.uk can help you with domain registration, web hosting and building a website. All with free personalised email and friendly UK support 7 days a week.
+                  </b> <br> <br>
+                  Domain names and web hosting are Names.co.uk speciality. They also provide everything else needed to run a booming online business. What’s more, they work hard to offer exactly the right mix of products and services to make their customers’ online ventures as prosperous as possible. Names.co.uk offers services suitable for total beginners, businesses, developers or resellers, they have everyone you covered.
+                </p>
+              </div>
+
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+
+              <!-- offers  -->
+              <div class="offers">
+                <!-- .com 1.99 -->
+                <a href="https://www.awin1.com/cread.php?awinmid=897&awinaffid=1177994&ued=https%3A%2F%2Fwww.names.co.uk%2Fdomain-names%2Fextensions%2Fcom" class="offer" target="_blank">
+                  <span class="offer__name">
+                    .com domain <br> only &#163;1.99 for one year (normally &#163;18.99)
+                  </span>
+                  <!--
+                    <br>
+                  <span class="offer__terms">
+                    Valid until 03 April 2023
+                  </span> -->
+                </a>
+                <!-- 25% off -->
+                <a href="https://www.awin1.com/cread.php?awinmid=897&awinaffid=1177994" class="offer" target="_blank">
+                  <span class="offer__name">
+                    25% off orders over &#163;50 <br>
+                    Use Code: HLQAVUIX
+                  </span> <br>
+                  <span class="offer__terms">
+                    Valid until 30 January 2023
+                  </span>
+                </a>
+                <!-- 20% off -->
+                <a href="https://www.awin1.com/cread.php?awinmid=897&awinaffid=1177994" class="offer" target="_blank">
+                  <span class="offer__name">
+                    20% off orders over &#163;25 <br>
+                    Use Code: MKYRFLLC
+                  </span> <br>
+                  <span class="offer__terms">
+                    Valid until 30 January 2023
+                  </span>
+                </a>
+                <!-- 25% off -->
+                <a href="https://www.awin1.com/cread.php?awinmid=897&awinaffid=1177994" class="offer" target="_blank">
+                  <span class="offer__name">
+                    25% off .com domain<br>
+                    Use Code: IRHXFMAA
+                  </span> <br>
+                  <span class="offer__terms">
+                    For 1 to 10 year registration <br>
+                    Valid until 30 January 2023
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        <!--  -->
+
+        <!-- WEB HOSTING UK  -->
+          <div class="affiliate-box affiliate-box-web-host" id="affiliate-box-web-hosting-uk" onclick="openAffiliateModal('affiliate-modal-web-hosting-uk')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/webhosting-uk.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              WebHosting UK
+            </p>
+            <p class="affiliate-box__description">
+              WebHosting UK has been providing fast, reliable, and affordable website hosting for over 21 years. Your website is in safe and secure hands with WebHosting UK.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Multiple offers available</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-web-hosting-uk">
+            <div class="modal-content">
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-web-hosting-uk')">
+                <i class="fas fa-times"></i>
+              </div>
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/webhosting-uk.png" alt="">
+                </div>
+                <p class="header__name">
+                  WebHosting UK
+                </p>
+              </div>
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    WebHosting UK has been providing fast, reliable, and affordable website hosting for over 21 years. Your website is in safe and secure hands with WebHosting UK.
+                  </b> <br> <br>
+                  WebHosting UK is one of the largest web hosting providers in the UK, serving over 35,000 customers and hosting over 1,000,000 websites across their network.Despite its scale, WebHosting UK  is proud to retain small business mentality towards customer care.
+                </p>
+              </div>
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+              <!-- offers  -->
+              <div class="offers">
+
+                <!-- 20% OFF Web Hosting -->
+                <a href="https://www.awin1.com/cread.php?awinmid=27692&awinaffid=1177994&ued=https%3A%2F%2Fwww.webhosting.uk.com%2Fcpanel-hosting" class="offer" target="_blank">
+                  <span class="offer__name">
+                    20% OFF Web Hosting <br>
+                    Use Code : NYW20
+                  </span>
+                  <!-- <br><span class="offer__terms">
+                    Valid until 30 January 2023
+                  </span> -->
+                </a>
+
+                <!-- 20% OFF SSL Certificates -->
+                <a href="https://www.awin1.com/cread.php?awinmid=27692&awinaffid=1177994&ued=https%3A%2F%2Fwww.webhosting.uk.com%2Fssl-certificates" class="offer" target="_blank">
+                  <span class="offer__name">
+                    20% OFF SSL Certificates <br>
+                    Use Code : NYS20
+                  </span>
+                  <!-- <br><span class="offer__terms">
+                    Valid until 30 January 2023
+                  </span> -->
+                </a>
+
+                <!-- 25% OFF WordPress Hosting -->
+                <a href="https://www.awin1.com/cread.php?awinmid=27692&awinaffid=1177994&ued=https%3A%2F%2Fwww.webhosting.uk.com%2Fwordpress-hosting" class="offer" target="_blank">
+                  <span class="offer__name">
+                    25% OFF WordPress Hosting <br>
+                    Use Code : NYW25
+                  </span>
+                  <!-- <br><span class="offer__terms">
+                    Valid until 30 January 2023
+                  </span> -->
+                </a>
+
+              </div>
+
+            </div>
+          </div>
+        <!--  -->
+
+        <!-- PRIORY DIRECT  -->
+          <div class="affiliate-box affiliate-box-business-supplies" id="affiliate-box-priory-direct" onclick="openAffiliateModal('affiliate-modal-priory-direct')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/priory-direct-logo.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              Priory Direct
+            </p>
+            <p class="affiliate-box__description">
+              Priory Direct is a supplier of planet-friendly packaging. They pride themselves on reducing the environmental impact of eCommerce while providing outstanding customer service.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Learn more</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-priory-direct">
+            <div class="modal-content">
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-priory-direct')">
+                <i class="fas fa-times"></i>
+              </div>
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/priory-direct-logo.png" alt="">
+                </div>
+                <p class="header__name">
+                  Priory Direct
+                </p>
+              </div>
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    Priory Direct is a supplier of planet-friendly packaging. They pride themselves on reducing the environmental impact of eCommerce while providing outstanding customer service.
+                  </b> <br> <br>
+                  Priory Direct aims to turn eCommerce into a fully sustainable industry. They are a leading UK supplier of sustainable packaging, labels, and warehouse essentials. Priory Directs knows that product packaging is often the first time your brand meets your customer in the physical world, it’s also the only marketing that guarantees a 100% open rate; so their mission to help you make packaging your best asset with their bespoke labels and packaging.
+                </p>
+              </div>
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+              <!-- offers  -->
+              <div class="offers">
+                <!-- offer -->
+                <a href="https://www.awin1.com/cread.php?awinmid=16865&awinaffid=1177994" class="offer" target="_blank">
+                  <span class="offer__name">
+                    Visit website to view deals
+                  </span>
+                  <!-- <br><span class="offer__terms">
+                    Valid until 03 April 2023
+                  </span> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        <!--  -->
+
+        <!-- PIXART PRINTING  -->
+          <div class="affiliate-box affiliate-box-business-supplies" id="affiliate-box-pixart-printing" onclick="openAffiliateModal('affiliate-modal-pixart-printing')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/pixartprinting-logo.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              Pixartprinting
+            </p>
+            <p class="affiliate-box__description">
+              Pixartprinting specialises in providing customised printing services and produces magazines, catalogues, labels, packaging, textile prints and so much more.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Learn more</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-pixart-printing">
+            <div class="modal-content">
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-pixart-printing')">
+                <i class="fas fa-times"></i>
+              </div>
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/pixartprinting-logo.png" alt="">
+                </div>
+                <p class="header__name">
+                  Pixartprinting
+                </p>
+              </div>
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    Pixartprinting specialises in providing customised printing services and produces magazines, catalogues, labels, packaging, textile prints and so much more.
+                  </b> <br> <br>
+                  Pixartprinting's online shop is the largest web-to-print provider in Europe. It offers clients quick and easy access to the best printing solutions and an extensive product catalogue with over 4,000,000 product combinations. Pixartprinting's passionate and talented staff takes care of over 15 000 orders daily, always putting customers first.
+                </p>
+              </div>
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+              <!-- offers  -->
+              <div class="offers">
+                <!-- offer -->
+                <a href="https://www.awin1.com/cread.php?awinmid=5853&awinaffid=1177994" class="offer" target="_blank">
+                  <span class="offer__name">
+                    Visit website to view deals
+                  </span>
+                  <!-- <br><span class="offer__terms">
+                    Valid until 03 April 2023
+                  </span> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        <!--  -->
+
+        <!-- CASHPLUS BANK  -->
+          <div class="affiliate-box affiliate-box-finance" id="affiliate-box-cashplus-bank" onclick="openAffiliateModal('affiliate-modal-cashplus-bank')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/cashplus-bank.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              Cashplus Bank
+            </p>
+            <p class="affiliate-box__description">
+              Cashplus Bank provides smart, simple banking to make your life easier.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Multiple offers available</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-cashplus-bank">
+            <div class="modal-content">
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-cashplus-bank')">
+                <i class="fas fa-times"></i>
+              </div>
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/cashplus-bank.png" alt="">
+                </div>
+                <p class="header__name">
+                  Cashplus Bank
+                </p>
+              </div>
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    Cashplus Bank provides smart, simple banking to make your life easier.
+                  </b> <br> <br>
+                  Cashplus Banks believes that financial services shouldn’t get in the way of life, they should enrich it. For 15 years they have successfully provided a seamless banking experience. From introducing the first UK prepaid card to being the first non-bank to offer a current account, they have been offering innovative products to 1.6 million customers long before fintech became a trend.
+                </p>
+              </div>
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+              <!-- offers  -->
+              <div class="offers">
+                <!-- offer -->
+                <a href="#" class="offer" target="_blank">
+                  <span class="offer__name">
+                    50% off orders over &#163;500
+                  </span> <br>
+                  <span class="offer__terms">
+                    Valid until 03 April 2023
+                  </span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        <!--  -->
+
+        <!-- REVOLUT
+          <div class="affiliate-box affiliate-box-finance" id="affiliate-box-revolut" onclick="openAffiliateModal('affiliate-modal-revolut')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/revolut.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              Revolut
+            </p>
+            <p class="affiliate-box__description">
+              Revolut helps with your everyday spending, savings and investments.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Multiple offers available</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-revolut">
+            <div class="modal-content">
+
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-revolut')">
+                <i class="fas fa-times"></i>
+              </div>
+
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/revolut.png" alt="">
+                </div>
+                <p class="header__name">
+                  Revolut
+                </p>
+              </div>
+
+              <div class="text">
+                <p>
+                  <b>
+                    Revolut helps with your everyday spending, savings and investments.
+                  </b> <br> <br>
+                  Revolut's goal is to make financial services available to as many individuals and businesses as possible. Their borderless, customer-focused platform helps their customers manage and grow their financial assets. Revolut offers all the necessary tools to manage, borrow, invest and protect your money.
+                </p>
+              </div>
+
+              <div class="divider"><div></div><div></div></div>
+
+              <div class="offers">
+
+                <a href="#" class="offer" target="_blank">
+                  <span class="offer__name">
+                    50% off orders over &#163;500
+                  </span> <br>
+                  <span class="offer__terms">
+                    Valid until 03 April 2023
+                  </span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        -->
+
+        <!-- GO CARDLESS  -->
+          <div class="affiliate-box affiliate-box-finance" id="affiliate-box-go-cardless" onclick="openAffiliateModal('affiliate-modal-go-cardless')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/go-cardless-uk.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              GoCardless UK
+            </p>
+            <p class="affiliate-box__description">
+              GoCardless lets businesses send and receive payments directly between bank accounts. Whether domestic or international, one-off or recurring, scheduled or instant. GoCardless does it all – quick, easy, and secure.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Learn more</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-go-cardless">
+            <div class="modal-content">
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-go-cardless')">
+                <i class="fas fa-times"></i>
+              </div>
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/go-cardless-uk.png" alt="">
+                </div>
+                <p class="header__name">
+                  GoCardless UK
+                </p>
+              </div>
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    GoCardless lets businesses send and receive payments directly between bank accounts. Whether domestic or international, one-off or recurring, scheduled or instant. GoCardless does it all – quick, easy, and secure.
+                  </b> <br> <br>
+                  GoCardless provides a better way to do business and get paid. A new, fairer and more efficient method for bank payments. The business is proud to provide award-winning customer service, where everyone can always get in touch with a real human.
+                </p>
+              </div>
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+              <!-- offers  -->
+              <div class="offers">
+                <!-- offer -->
+                <a href="https://www.awin1.com/cread.php?awinmid=31199&awinaffid=1177994" class="offer" target="_blank">
+                  <span class="offer__name">
+                    Visit website to view deals
+                  </span>
+                  <!-- <br><span class="offer__terms">
+                    Valid until 03 April 2023
+                  </span> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        <!--  -->
+
+        <!-- COOP  -->
+          <div class="affiliate-box affiliate-box-mobile-and-broadband" id="affiliate-box-coop"  onclick="openAffiliateModal('affiliate-modal-coop')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/coop.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              Co-op Mobile
+            </p>
+            <p class="affiliate-box__description">
+              Your Co-op is part of The Midcounties Co-operative and is the only Co-op utilities provider in the UK offering; broadband, phone and mobile services to residential and business customers.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Learn more</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-coop">
+            <div class="modal-content">
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-coop')">
+                <i class="fas fa-times"></i>
+              </div>
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/coop.png" alt="">
+                </div>
+                <p class="header__name">
+                  Co-op Mobile
+                </p>
+              </div>
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    Your Co-op is part of The Midcounties Co-operative and is the only Co-op utilities provider in the UK offering; broadband, phone and mobile services to residential and business customers.
+                  </b> <br> <br>
+                  At You Co-op Mobile and Broadband, they are working hard to reduce the impact of broadband and mobile by creating a low-carbon alternative in partnership with climate activists, Ecologi. Our work with Ecologi offsets emissions through verified carbon credits, and also supports the planting of trees around the world.
+                </p>
+              </div>
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+              <!-- offers  -->
+              <div class="offers">
+                <!-- offer -->
+                <a href="https://www.awin1.com/cread.php?awinmid=30943&awinaffid=1177994" class="offer" target="_blank">
+                  <span class="offer__name">
+                    Visit website to view deals
+                  </span>
+                  <!-- <br><span class="offer__terms">
+                    Valid until 03 April 2023
+                  </span> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        <!--  -->
+
+        <!-- IQ MOBILE  -->
+          <div class="affiliate-box affiliate-box-mobile-and-broadband" id="affiliate-box-iq-mobile"  onclick="openAffiliateModal('affiliate-modal-iq-mobile')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/iq-mobile.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              IQ Mobile
+            </p>
+            <p class="affiliate-box__description">
+              IQ Mobile is a UK Mobile Virtual Network focused on making it easy for companies who seek rapid and affordable entry into the UK mobile market.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Multiple offers available</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-iq-mobile">
+            <div class="modal-content">
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-iq-mobile')">
+                <i class="fas fa-times"></i>
+              </div>
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/iq-mobile.png" alt="">
+                </div>
+                <p class="header__name">
+                  IQ Mobile
+                </p>
+              </div>
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    IQ Mobile is a UK Mobile Virtual Network focused on making it easy for companies who seek rapid and affordable entry into the UK mobile market.
+                  </b> <br> <br>
+                  IQ Mobile provides a complete toolkit of portals, APIs and systems which allow brands to launch an integrated and customised proposition without the barriers typically associated with an MVNO. Running on EE – the number 1 network in the UK , IQ provides easy to understand plans, straight-forward billing and great local service.
+                </p>
+              </div>
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+              <!-- offers  -->
+              <div class="offers">
+                <!-- 5G! 10GB Data -->
+                <a href="https://www.awin1.com/cread.php?awinmid=21268&awinaffid=1177994&ued=https%3A%2F%2Fhelloiq.co.uk%2Fcollections%2Fmobile-simonly%2Fproducts%2F4g-sim-card-with-10gb-data-unlimited-calls-and-texts" class="offer" target="_blank">
+                  <span class="offer__name">
+                    5G! 10GB Data, Unlimited Calls and Texts <br>
+                    Just &#163;12.50 A Month
+                  </span>
+                  <br><span class="offer__terms">
+                    3 Months Contract
+                  </span>
+                </a>
+                <!-- Just Calls and Texts -->
+                <a href="https://www.awin1.com/cread.php?awinmid=21268&awinaffid=1177994&ued=https%3A%2F%2Fhelloiq.co.uk%2Fcollections%2Fmobile-simonly%2Fproducts%2Fjust-unlimited-calls-and-texts" class="offer" target="_blank">
+                  <span class="offer__name">
+                    Just Calls and Texts <br>
+                    Just &#163;7 A Month
+                  </span>
+                  <br><span class="offer__terms">
+                    3 Months Contract
+                  </span>
+                </a>
+                <!-- 5G! 3GB -->
+                <a href="https://www.awin1.com/cread.php?awinmid=21268&awinaffid=1177994&ued=https%3A%2F%2Fhelloiq.co.uk%2Fcollections%2Fmobile-simonly%2Fproducts%2F4g-sim-card-with-3gb-data-unlimited-calls-and-texts" class="offer" target="_blank">
+                  <span class="offer__name">
+                    5G! 3GB Data, Unlimited Calls and Texts <br>
+                    Just &#163;10 A Month
+                  </span>
+                  <br><span class="offer__terms">
+                    3 Months Contract
+                  </span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        <!--  -->
+
+        <!-- BinaryRack  -->
+          <div class="affiliate-box affiliate-box-web-host" id="affiliate-box-binary-racks" onclick="openAffiliateModal('affiliate-modal-binary-racks')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/binary-racks.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              BinaryRacks
+            </p>
+            <p class="affiliate-box__description">
+              BinaryRacks is a UK-based data hosting provider.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Learn more</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-binary-racks">
+            <div class="modal-content">
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-binary-racks')">
+                <i class="fas fa-times"></i>
+              </div>
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/binary-racks.png" alt="">
+                </div>
+                <p class="header__name">
+                  BinaryRacks
+                </p>
+              </div>
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    BinaryRacks is a UK-based data hosting provider.
+                  </b> <br> <br>
+                  BinaryRacks provides their customers with high-performance Dedicated Servers, Virtual Servers, Cloud hosting and Colocation Racks. Their products are designed to provide their customers with simple but powerful solutions. All products are backed up by world-class customer service, guaranteeing prompt, friendly and professional service.
+                </p>
+              </div>
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+              <!-- offers  -->
+              <div class="offers">
+                <!-- offer -->
+                <a href="https://www.awin1.com/cread.php?awinmid=29761&awinaffid=1177994" class="offer" target="_blank">
+                  <span class="offer__name">
+                    Visit website to view deals
+                  </span>
+                  <!-- <br><span class="offer__terms">
+                    Valid until 03 April 2023
+                  </span> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        <!--  -->
+
+        <!-- Score by Traffic Matters  -->
+          <div class="affiliate-box affiliate-box-marketing" id="affiliate-box-score" onclick="openAffiliateModal('affiliate-modal-score')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/traffic-matters.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              Score by Traffic Matters
+            </p>
+            <p class="affiliate-box__description">
+              Traffic Matters has over 10 years experience of developing internal systems and algorithms to optimize ad campaigns.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Learn more</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-score">
+            <div class="modal-content">
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-score')">
+                <i class="fas fa-times"></i>
+              </div>
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/traffic-matters.png" alt="">
+                </div>
+                <p class="header__name">
+                  Score by Traffic Matters
+                </p>
+              </div>
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    Traffic Matters has over 10 years experience of developing internal systems and algorithms to optimize ad campaigns.
+                  </b> <br> <br>
+                  Score monitors the quality and intent of your online traffic, and identifies the worst-performing segments of your campaigns. It helps you to optimize your ad spending, increase your profits and assure the integrity of your business. Eliminating bots and deceptive traffic supports building solid relationships with your business partners and clients, allowing your business to flourish.
+                </p>
+              </div>
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+              <!-- offers  -->
+              <div class="offers">
+                <!-- offer -->
+                <a href="https://www.awin1.com/cread.php?awinmid=36154&awinaffid=1177994" class="offer" target="_blank">
+                  <span class="offer__name">
+                    Visit website to view deals
+                  </span>
+                  <!-- <br><span class="offer__terms">
+                    Valid until 03 April 2023
+                  </span> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        <!--  -->
+
+        <!-- Create  -->
+          <div class="affiliate-box affiliate-box-marketing" id="affiliate-box-create" onclick="openAffiliateModal('affiliate-modal-create')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/create.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              Create
+            </p>
+            <p class="affiliate-box__description">
+              Create offers an easy-to-use website builder with many beautiful templates.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Learn more</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-create">
+            <div class="modal-content">
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-create')">
+                <i class="fas fa-times"></i>
+              </div>
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/create.png" alt="">
+                </div>
+                <p class="header__name">
+                  Create
+                </p>
+              </div>
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    Create offers an easy-to-use website builder with many beautiful templates.
+                  </b> <br> <br>
+                  At Create they believe that building a website shouldn't be time-consuming. The Create Website Builder makes it easy to craft a stunning website without the need to know any code. Simply choose a template, add your content and publish your brand-new site. Use the tools to make mobile-friendly web pages which are automatically responsive, and set up your own secure shop to sell your products and services.
+                </p>
+              </div>
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+              <!-- offers  -->
+              <div class="offers">
+                <!-- offer -->
+                <a href="https://www.awin1.com/cread.php?awinmid=295&awinaffid=1177994" class="offer" target="_blank">
+                  <span class="offer__name">
+                    Visit website to view deals
+                  </span>
+                  <!-- <br> <span class="offer__terms">
+                    Valid until 03 April 2023
+                  </span> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        <!--  -->
+
+        <!-- RAJA  -->
+          <div class="affiliate-box affiliate-box-business-supplies" id="affiliate-box-raja" onclick="openAffiliateModal('affiliate-modal-raja')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/raja.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              RAJA
+            </p>
+            <p class="affiliate-box__description">
+              RAJA offers over 5,000 different packaging products ready for next-day delivery.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Learn more</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-raja">
+            <div class="modal-content">
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-raja')">
+                <i class="fas fa-times"></i>
+              </div>
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/raja.png" alt="">
+                </div>
+                <p class="header__name">
+                  RAJA
+                </p>
+              </div>
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    RAJA offers over 5,000 different packaging products ready for next-day delivery.
+                  </b> <br> <br>
+                  A packaging distributor for businesses providing specialist eCommerce packaging, eco-responsible packaging, packing machinery to improve warehouse efficiency, and even customised packaging for bespoke requirements.RAJA is known for delivering reliability, quality and competitive pricing to businesses throughout Europe.
+                </p>
+              </div>
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+              <!-- offers  -->
+              <div class="offers">
+                <!-- offer -->
+                <a href="https://www.awin1.com/cread.php?awinmid=3837&awinaffid=1177994" class="offer" target="_blank">
+                  <span class="offer__name">
+                    Visit website to view deals
+                  </span>
+                  <!-- <br> <span class="offer__terms">
+                    Valid until 03 April 2023
+                  </span> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        <!--  -->
+
+        <!-- Absolute-Email -->
+          <div class="affiliate-box affiliate-box-web-host" id="affiliate-box-absolute-email" onclick="openAffiliateModal('affiliate-modal-absolute-email')">
+            <div class="affiliate-box__logo">
+              <img src="assets/images/affiliate-logos/absolute-email.png" alt="">
+            </div>
+            <p class="affiliate-box__name">
+              Absolute-Email
+            </p>
+            <p class="affiliate-box__description">
+              Absolute-Email offers personalised email addresses for businesses, individuals and organisations so you can stand out from the crowd with your own professional-looking email addresses.
+            </p>
+            <div class="affiliate-box__discount">
+              <i class="fas fa-tag"></i>
+              <p>Learn more</p>
+            </div>
+          </div>
+
+          <div class="affiliate-modal affiliate-modal--hidden" id="affiliate-modal-absolute-email">
+            <div class="modal-content">
+              <!-- close  -->
+              <div class="close" onclick="closeAffiliateModal('affiliate-modal-absolute-email')">
+                <i class="fas fa-times"></i>
+              </div>
+              <!-- header  -->
+              <div class="header">
+                <div class="header__logo">
+                  <img src="assets/images/affiliate-logos/absolute-email.png" alt="">
+                </div>
+                <p class="header__name">
+                  Absolute-Email
+                </p>
+              </div>
+              <!-- text  -->
+              <div class="text">
+                <p>
+                  <b>
+                    Absolute-Email offers personalised email addresses for businesses, individuals and organisations so you can stand out from the crowd with your own professional-looking email addresses.
+                  </b> <br> <br>
+                  Setting up your personalised email is quick and easy with Absolute-Email. You can send and receive emails from any device, using any email software or app, from anywhere in the world. This makes Absolute-Email service a simple easy and flexible solution that you can use in a way that suits you, whether at home, work or on the move. They also offer fast and reliable website hosting and domain registration, providing everything you need to get your website up and running.
+                </p>
+              </div>
+              <!-- divider  -->
+              <div class="divider"><div></div><div></div></div>
+              <!-- offers  -->
+              <div class="offers">
+                <!-- offer -->
+                <a href="https://www.awin1.com/cread.php?awinmid=37528&awinaffid=1177994" class="offer" target="_blank">
+                  <span class="offer__name">
+                    Visit website to view deals
+                  </span>
+                  <!-- <br> <span class="offer__terms">
+                    Valid until 03 April 2023
+                  </span> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        <!--  -->
+
+
+      </div>
+    </section>
+    <!-- ------------------------------  -->
+  </div>
+</body>
+</html>
